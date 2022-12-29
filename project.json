@@ -1,0 +1,135 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "id",
+        "name",
+        "description",
+        "ingredient",
+        "order",
+        "location"
+    ],
+    "properties": {
+        "id": {
+            "type": "integer",
+            "default": 0,
+            "title": "The id Schema",
+            "examples": [
+                343
+            ]
+        },
+        "name": {
+            "type": "string",
+            "default": "",
+            "title": "The name Schema",
+            "examples": [
+                "tasty gizard"
+            ]
+        },
+        "description": {
+            "type": "string",
+            "default": "",
+            "title": "The description Schema",
+            "examples": [
+                "keep every taste for memory"
+            ]
+        },
+        "ingredient": {
+            "type": "array",
+            "default": [],
+            "title": "The ingredient Schema",
+            "items": {
+                "type": "string",
+                "title": "A Schema",
+                "examples": [
+                    "cucumber",
+                    "fish",
+                    "Punkin",
+                    "Latos",
+                    "egg",
+                    "chicken"
+                ]
+            },
+            "examples": [
+                ["cucumber",
+                    "fish",
+                    "Punkin",
+                    "Latos",
+                    "egg",
+                    "chicken"
+                ]
+            ]
+        },
+        "order": {
+            "type": "boolean",
+            "default": false,
+            "title": "The order Schema",
+            "examples": [
+                true
+            ]
+        },
+        "location": {
+            "type": "object",
+            "default": {},
+            "title": "The location Schema",
+            "required": [
+                "address",
+                "zip code",
+                "web"
+            ],
+            "properties": {
+                "address": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The address Schema",
+                    "examples": [
+                        "21 ericmorore road"
+                    ]
+                },
+                "zip code": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The zip code Schema",
+                    "examples": [
+                        8966
+                    ]
+                },
+                "web": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The web Schema",
+                    "examples": [
+                        "tastygizard.com"
+                    ]
+                }
+            },
+            "examples": [{
+                "address": "21 ericmorore road",
+                "zip code": 8966,
+                "web": "tastygizard.com"
+            }]
+        }
+    },
+    "examples": [{
+        "id": 343,
+        "name": "tasty gizard",
+        "description": "keep every taste for memory",
+        "ingredient": [
+            "cucumber",
+            "fish",
+            "Punkin",
+            "Latos",
+            "egg",
+            "chicken"
+        ],
+        "order": true,
+        "location": {
+            "address": "21 ericmorore road",
+            "zip code": 8966,
+            "web": "tastygizard.com"
+        }
+    }]
+}
