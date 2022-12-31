@@ -1,4 +1,4 @@
-# foodapp.repo
+# FOOD ORDERING SCHEMA
 foodapp
 A food oredering app
-showing the ingrdient,location,websit,
+this is the schema for food ordering app 
